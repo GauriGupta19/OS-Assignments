@@ -1,0 +1,6 @@
+3 first-fit
+
+A heap header data structure is maintained which stores information such as current size_occupied, 
+no. of memory blocks allocated, no. of nodes in free list, the current max-free size and the current min-free size.
+These attributes are updated each time malloc() or free() is called. The whole free list is not iterated every time 
+min_size or max_size is calculates, but only in some corner cases.
